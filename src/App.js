@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import 'h8k-components'
 
 import { image1, image2, image3, image4 } from './assets/images'

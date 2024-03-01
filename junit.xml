@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="8" failures="4" errors="0" time="2.203">
-  <testsuite name="Catalog Viewer" errors="0" failures="4" skipped="0" timestamp="2024-03-01T11:09:22" time="1.553" tests="8">
-    <testcase classname="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" name="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" time="0.064">
+<testsuites name="jest tests" tests="8" failures="5" errors="0" time="2.313">
+  <testsuite name="Catalog Viewer" errors="0" failures="5" skipped="0" timestamp="2024-03-01T11:11:49" time="1.601" tests="8">
+    <testcase classname="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" name="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" time="0.066">
       <failure>Error: expect(received).toContain(expected) // indexOf
 
 Expected substring: &quot;white-light-candle.jpg&quot;
@@ -26,7 +26,7 @@ Received string:    &quot;http://localhost/tea-light-candle.jpeg&quot;
     at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Catalog Viewer clicking on the previous button should show the previous image" name="Catalog Viewer clicking on the previous button should show the previous image" time="0.015">
+    <testcase classname="Catalog Viewer clicking on the previous button should show the previous image" name="Catalog Viewer clicking on the previous button should show the previous image" time="0.027">
       <failure>Error: expect(received).toContain(expected) // indexOf
 
 Expected substring: &quot;white-light-candle.jpg&quot;
@@ -51,9 +51,9 @@ Received string:    &quot;http://localhost/tea-light-candle.jpeg&quot;
     at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Catalog Viewer clicking on the next button should show the next image" name="Catalog Viewer clicking on the next button should show the next image" time="0.031">
+    <testcase classname="Catalog Viewer clicking on the next button should show the next image" name="Catalog Viewer clicking on the next button should show the next image" time="0.035">
     </testcase>
-    <testcase classname="Catalog Viewer clicking on the previous button when on the first item should show the last image" name="Catalog Viewer clicking on the previous button when on the first item should show the last image" time="0.019">
+    <testcase classname="Catalog Viewer clicking on the previous button when on the first item should show the last image" name="Catalog Viewer clicking on the previous button when on the first item should show the last image" time="0.015">
     </testcase>
     <testcase classname="Catalog Viewer clicking on the next button when on the last item should show the first image" name="Catalog Viewer clicking on the next button when on the last item should show the first image" time="0.015">
       <failure>Error: expect(received).toContain(expected) // indexOf
@@ -80,11 +80,34 @@ Received string:    &quot;http://localhost/tea-light-candle.jpeg&quot;
     at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Catalog Viewer should change the image every 3 seconds when slide show checked" name="Catalog Viewer should change the image every 3 seconds when slide show checked" time="0.033">
+    <testcase classname="Catalog Viewer should change the image every 3 seconds when slide show checked" name="Catalog Viewer should change the image every 3 seconds when slide show checked" time="0.021">
     </testcase>
     <testcase classname="Catalog Viewer should have user interaction like before, when slide show checked" name="Catalog Viewer should have user interaction like before, when slide show checked" time="0.025">
+      <failure>Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: &quot;white-light-candle.jpg&quot;
+Received string:    &quot;http://localhost/pink-light-candle.jpeg&quot;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:111:24)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" name="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" time="0.017">
+    <testcase classname="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" name="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" time="0.018">
       <failure>Error: expect(received).toContain(expected) // indexOf
 
 Expected substring: &quot;white-light-candle.jpg&quot;

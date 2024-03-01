@@ -70,7 +70,7 @@ function App() {
       <div className='layout-column justify-content-center mt-75'>
         <div className='layout-row justify-content-center'>
           <div className='card pt-25'>
-            <Viewer catalogImage={ catalogs[activeIndex].image } />
+            <Viewer catalogImage={ catalogs[activeIndex].image } data-testid="catalog-view" />
             <div className='layout-row justify-content-center align-items-center mt-20'>
             <button 
               className="icon-only outlined"

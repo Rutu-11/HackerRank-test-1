@@ -38,13 +38,13 @@ function App() {
      timer = setInterval(()=>{
       nextImage();
     }, slideDuration);
-    setSlideTimer(slideTimer)
+   
   }
   else{
-    clearInterval(timer)
+    clearInterval(slideTimer)
   }
     return ()=>{
-      clearInterval()
+      clearInterval(timer)
     }
  },[slideShowActive, activeIndex])
 

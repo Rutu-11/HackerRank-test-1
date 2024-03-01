@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="8" failures="4" errors="0" time="2.213">
-  <testsuite name="Catalog Viewer" errors="0" failures="4" skipped="0" timestamp="2024-03-01T11:08:25" time="1.561" tests="8">
-    <testcase classname="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" name="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" time="0.063">
+<testsuites name="jest tests" tests="8" failures="4" errors="0" time="2.203">
+  <testsuite name="Catalog Viewer" errors="0" failures="4" skipped="0" timestamp="2024-03-01T11:09:22" time="1.553" tests="8">
+    <testcase classname="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" name="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" time="0.064">
       <failure>Error: expect(received).toContain(expected) // indexOf
 
 Expected substring: &quot;white-light-candle.jpg&quot;
@@ -26,7 +26,7 @@ Received string:    &quot;http://localhost/tea-light-candle.jpeg&quot;
     at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Catalog Viewer clicking on the previous button should show the previous image" name="Catalog Viewer clicking on the previous button should show the previous image" time="0.016">
+    <testcase classname="Catalog Viewer clicking on the previous button should show the previous image" name="Catalog Viewer clicking on the previous button should show the previous image" time="0.015">
       <failure>Error: expect(received).toContain(expected) // indexOf
 
 Expected substring: &quot;white-light-candle.jpg&quot;
@@ -51,9 +51,9 @@ Received string:    &quot;http://localhost/tea-light-candle.jpeg&quot;
     at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Catalog Viewer clicking on the next button should show the next image" name="Catalog Viewer clicking on the next button should show the next image" time="0.033">
+    <testcase classname="Catalog Viewer clicking on the next button should show the next image" name="Catalog Viewer clicking on the next button should show the next image" time="0.031">
     </testcase>
-    <testcase classname="Catalog Viewer clicking on the previous button when on the first item should show the last image" name="Catalog Viewer clicking on the previous button when on the first item should show the last image" time="0.029">
+    <testcase classname="Catalog Viewer clicking on the previous button when on the first item should show the last image" name="Catalog Viewer clicking on the previous button when on the first item should show the last image" time="0.019">
     </testcase>
     <testcase classname="Catalog Viewer clicking on the next button when on the last item should show the first image" name="Catalog Viewer clicking on the next button when on the last item should show the first image" time="0.015">
       <failure>Error: expect(received).toContain(expected) // indexOf
@@ -80,11 +80,11 @@ Received string:    &quot;http://localhost/tea-light-candle.jpeg&quot;
     at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Catalog Viewer should change the image every 3 seconds when slide show checked" name="Catalog Viewer should change the image every 3 seconds when slide show checked" time="0.023">
+    <testcase classname="Catalog Viewer should change the image every 3 seconds when slide show checked" name="Catalog Viewer should change the image every 3 seconds when slide show checked" time="0.033">
     </testcase>
-    <testcase classname="Catalog Viewer should have user interaction like before, when slide show checked" name="Catalog Viewer should have user interaction like before, when slide show checked" time="0.03">
+    <testcase classname="Catalog Viewer should have user interaction like before, when slide show checked" name="Catalog Viewer should have user interaction like before, when slide show checked" time="0.025">
     </testcase>
-    <testcase classname="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" name="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" time="0.018">
+    <testcase classname="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" name="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" time="0.017">
       <failure>Error: expect(received).toContain(expected) // indexOf
 
 Expected substring: &quot;white-light-candle.jpg&quot;

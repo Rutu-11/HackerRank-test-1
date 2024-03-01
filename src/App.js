@@ -38,7 +38,7 @@ function App() {
      timer = setInterval(()=>{
       nextImage();
     }, slideDuration);
-    setSlideTimer(timer)
+    setSlideTimer(slideTimer)
   }
   else{
     clearInterval(timer)

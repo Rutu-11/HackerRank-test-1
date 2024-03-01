@@ -31,17 +31,21 @@ function App() {
   const [ slideTimer, setSlideTimer ] = useState(null)
   const [ slideDuration ] = useState(3000);
   const [slideShowActive, setSlideShowActive] = useState(false);
+
  useEffect(()=>{
+  let timer;
   if(slideShowActive){
-    const timer = setInterval(()=>{
+     timer = setInterval(()=>{
       nextImage();
     }, slideDuration);
     setSlideTimer(timer)
   }
   else{
-    clearInterval(slideTimer)
+    clearInterval(timer)
   }
-
+    return ()=>{
+      clearInterval()
+    }
  },[slideShowActive, activeIndex])
 
 

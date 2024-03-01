@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="8" failures="8" errors="0" time="2.671">
-  <testsuite name="Catalog Viewer" errors="0" failures="8" skipped="0" timestamp="2024-03-01T10:55:18" time="1.987" tests="8">
-    <testcase classname="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" name="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" time="0.124">
-      <failure>ReferenceError: useEffect is not defined
-    at App (/projects/challenge/src/App.js:34:2)
-    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
-    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
-    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
-    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
-    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
-    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
-    at renderRootSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
-    at recoverFromConcurrentError (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
-    at performConcurrentWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
-    at flushActQueue (/projects/challenge/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/projects/challenge/node_modules/react/cjs/react.development.js:2582:11)
-    at /projects/challenge/node_modules/@testing-library/react/dist/act-compat.js:46:25
-    at renderRoot (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:161:26)
-    at render (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:247:10)
-    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:29:17)
+<testsuites name="jest tests" tests="8" failures="4" errors="0" time="2.216">
+  <testsuite name="Catalog Viewer" errors="0" failures="4" skipped="0" timestamp="2024-03-01T10:56:36" time="1.554" tests="8">
+    <testcase classname="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" name="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" time="0.076">
+      <failure>Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: &quot;white-light-candle.jpg&quot;
+Received string:    &quot;http://localhost/tea-light-candle.jpeg&quot;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:64:24)
     at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
-    at _callCircusHook (/projects/challenge/node_modules/jest-circus/build/run.js:181:40)
-    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:148:5)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
     at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
     at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
     at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
@@ -38,29 +26,17 @@
     at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Catalog Viewer clicking on the previous button should show the previous image" name="Catalog Viewer clicking on the previous button should show the previous image" time="0.013">
-      <failure>ReferenceError: useEffect is not defined
-    at App (/projects/challenge/src/App.js:34:2)
-    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
-    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
-    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
-    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
-    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
-    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
-    at renderRootSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
-    at recoverFromConcurrentError (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
-    at performConcurrentWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
-    at flushActQueue (/projects/challenge/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/projects/challenge/node_modules/react/cjs/react.development.js:2582:11)
-    at /projects/challenge/node_modules/@testing-library/react/dist/act-compat.js:46:25
-    at renderRoot (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:161:26)
-    at render (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:247:10)
-    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:29:17)
+    <testcase classname="Catalog Viewer clicking on the previous button should show the previous image" name="Catalog Viewer clicking on the previous button should show the previous image" time="0.015">
+      <failure>Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: &quot;white-light-candle.jpg&quot;
+Received string:    &quot;http://localhost/tea-light-candle.jpeg&quot;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:71:24)
     at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
-    at _callCircusHook (/projects/challenge/node_modules/jest-circus/build/run.js:181:40)
-    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:148:5)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
     at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
     at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
     at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
@@ -75,29 +51,21 @@
     at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Catalog Viewer clicking on the next button should show the next image" name="Catalog Viewer clicking on the next button should show the next image" time="0.013">
-      <failure>ReferenceError: useEffect is not defined
-    at App (/projects/challenge/src/App.js:34:2)
-    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
-    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
-    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
-    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
-    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
-    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
-    at renderRootSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
-    at recoverFromConcurrentError (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
-    at performConcurrentWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
-    at flushActQueue (/projects/challenge/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/projects/challenge/node_modules/react/cjs/react.development.js:2582:11)
-    at /projects/challenge/node_modules/@testing-library/react/dist/act-compat.js:46:25
-    at renderRoot (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:161:26)
-    at render (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:247:10)
-    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:29:17)
+    <testcase classname="Catalog Viewer clicking on the next button should show the next image" name="Catalog Viewer clicking on the next button should show the next image" time="0.031">
+    </testcase>
+    <testcase classname="Catalog Viewer clicking on the previous button when on the first item should show the last image" name="Catalog Viewer clicking on the previous button when on the first item should show the last image" time="0.018">
+    </testcase>
+    <testcase classname="Catalog Viewer clicking on the next button when on the last item should show the first image" name="Catalog Viewer clicking on the next button when on the last item should show the first image" time="0.015">
+      <failure>Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: &quot;green-light-candle.jpeg&quot;
+Received string:    &quot;http://localhost/tea-light-candle.jpeg&quot;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:90:24)
     at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
-    at _callCircusHook (/projects/challenge/node_modules/jest-circus/build/run.js:181:40)
-    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:148:5)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
     at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
     at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
     at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
@@ -112,177 +80,21 @@
     at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Catalog Viewer clicking on the previous button when on the first item should show the last image" name="Catalog Viewer clicking on the previous button when on the first item should show the last image" time="0.038">
-      <failure>ReferenceError: useEffect is not defined
-    at App (/projects/challenge/src/App.js:34:2)
-    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
-    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
-    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
-    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
-    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
-    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
-    at renderRootSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
-    at recoverFromConcurrentError (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
-    at performConcurrentWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
-    at flushActQueue (/projects/challenge/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/projects/challenge/node_modules/react/cjs/react.development.js:2582:11)
-    at /projects/challenge/node_modules/@testing-library/react/dist/act-compat.js:46:25
-    at renderRoot (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:161:26)
-    at render (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:247:10)
-    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:29:17)
-    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
-    at _callCircusHook (/projects/challenge/node_modules/jest-circus/build/run.js:181:40)
-    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:148:5)
-    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
-    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
-    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
-    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
-    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
-    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
-    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
-    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
-    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
-    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
-    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
-    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
-    at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    <testcase classname="Catalog Viewer should change the image every 3 seconds when slide show checked" name="Catalog Viewer should change the image every 3 seconds when slide show checked" time="0.023">
     </testcase>
-    <testcase classname="Catalog Viewer clicking on the next button when on the last item should show the first image" name="Catalog Viewer clicking on the next button when on the last item should show the first image" time="0.035">
-      <failure>ReferenceError: useEffect is not defined
-    at App (/projects/challenge/src/App.js:34:2)
-    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
-    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
-    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
-    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
-    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
-    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
-    at renderRootSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
-    at recoverFromConcurrentError (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
-    at performConcurrentWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
-    at flushActQueue (/projects/challenge/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/projects/challenge/node_modules/react/cjs/react.development.js:2582:11)
-    at /projects/challenge/node_modules/@testing-library/react/dist/act-compat.js:46:25
-    at renderRoot (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:161:26)
-    at render (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:247:10)
-    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:29:17)
-    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
-    at _callCircusHook (/projects/challenge/node_modules/jest-circus/build/run.js:181:40)
-    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:148:5)
-    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
-    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
-    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
-    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
-    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
-    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
-    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
-    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
-    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
-    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
-    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
-    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
-    at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    <testcase classname="Catalog Viewer should have user interaction like before, when slide show checked" name="Catalog Viewer should have user interaction like before, when slide show checked" time="0.03">
     </testcase>
-    <testcase classname="Catalog Viewer should change the image every 3 seconds when slide show checked" name="Catalog Viewer should change the image every 3 seconds when slide show checked" time="0.019">
-      <failure>ReferenceError: useEffect is not defined
-    at App (/projects/challenge/src/App.js:34:2)
-    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
-    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
-    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
-    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
-    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
-    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
-    at renderRootSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
-    at recoverFromConcurrentError (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
-    at performConcurrentWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
-    at flushActQueue (/projects/challenge/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/projects/challenge/node_modules/react/cjs/react.development.js:2582:11)
-    at /projects/challenge/node_modules/@testing-library/react/dist/act-compat.js:46:25
-    at renderRoot (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:161:26)
-    at render (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:247:10)
-    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:29:17)
+    <testcase classname="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" name="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" time="0.019">
+      <failure>Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: &quot;white-light-candle.jpg&quot;
+Received string:    &quot;http://localhost/tea-light-candle.jpeg&quot;
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:116:24)
     at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
-    at _callCircusHook (/projects/challenge/node_modules/jest-circus/build/run.js:181:40)
-    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:148:5)
-    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
-    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
-    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
-    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
-    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
-    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
-    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
-    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
-    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
-    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
-    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
-    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
-    at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
-    </testcase>
-    <testcase classname="Catalog Viewer should have user interaction like before, when slide show checked" name="Catalog Viewer should have user interaction like before, when slide show checked" time="0.018">
-      <failure>ReferenceError: useEffect is not defined
-    at App (/projects/challenge/src/App.js:34:2)
-    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
-    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
-    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
-    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
-    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
-    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
-    at renderRootSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
-    at recoverFromConcurrentError (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
-    at performConcurrentWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
-    at flushActQueue (/projects/challenge/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/projects/challenge/node_modules/react/cjs/react.development.js:2582:11)
-    at /projects/challenge/node_modules/@testing-library/react/dist/act-compat.js:46:25
-    at renderRoot (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:161:26)
-    at render (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:247:10)
-    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:29:17)
-    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
-    at _callCircusHook (/projects/challenge/node_modules/jest-circus/build/run.js:181:40)
-    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:148:5)
-    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
-    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
-    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
-    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
-    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
-    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
-    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
-    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
-    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
-    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
-    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
-    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
-    at Object.run (/projects/challenge/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
-    </testcase>
-    <testcase classname="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" name="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" time="0.017">
-      <failure>ReferenceError: useEffect is not defined
-    at App (/projects/challenge/src/App.js:34:2)
-    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
-    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
-    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
-    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
-    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
-    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
-    at renderRootSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
-    at recoverFromConcurrentError (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
-    at performConcurrentWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
-    at flushActQueue (/projects/challenge/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/projects/challenge/node_modules/react/cjs/react.development.js:2582:11)
-    at /projects/challenge/node_modules/@testing-library/react/dist/act-compat.js:46:25
-    at renderRoot (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:161:26)
-    at render (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:247:10)
-    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:29:17)
-    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
-    at _callCircusHook (/projects/challenge/node_modules/jest-circus/build/run.js:181:40)
-    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:148:5)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
     at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
     at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:60:9)
     at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)

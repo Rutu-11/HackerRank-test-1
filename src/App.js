@@ -53,7 +53,7 @@ function App() {
   setActiveIndex((prev)=>(prev === 0 ? catalogs.length -1: prev-1))
  }
 
- const handleThumbClick = ()=>{
+ const handleThumbClick = (index)=>{
   setActiveIndex(index);
  }
 

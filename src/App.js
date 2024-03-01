@@ -38,7 +38,7 @@ function App() {
      timer = setInterval(()=>{
       nextImage();
     }, slideDuration);
-   
+   setSlideTimer(timer)
   }
   else{
     clearInterval(slideTimer)
@@ -70,7 +70,7 @@ function App() {
       <div className='layout-column justify-content-center mt-75'>
         <div className='layout-row justify-content-center'>
           <div className='card pt-25'>
-            <Viewer catalogImage={ catalogs[activeIndex].image } data-testid="catalog-view" />
+            <Viewer catalogImage={ catalogs[activeIndex].image } data-testid="catlog-view" />
             <div className='layout-row justify-content-center align-items-center mt-20'>
             <button 
               className="icon-only outlined"
